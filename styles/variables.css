@@ -2,3 +2,23 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --accent-color: #ff0070;
+  --header-title-color: #db00ff;
+  --bg-color: #000028;
+  --bg-image: url("../images/cover-image-dark.png");
+  --text-color: #f1b2ce;
+  --title-decor: #ff0070;
+  --bg-title: #ff0070;
+  --menu-header: #ff0070;
+  --subtitle-color: #000028;
+  --title-color: #ff0070;
+  --link-color: #ff0070;
+  --footer-title-color: #db00ff;
+  --decorativ: flex;
+  --hover-menu: rgba(255, 0, 112, 0.4);
+  --hover-link: #f1b2ce;
+  --focus-menu: #ff0070;
+  --focus-link: #f1b2ce;
+}
