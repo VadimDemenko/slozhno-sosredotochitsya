@@ -2,15 +2,17 @@
 
 .page {
   background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
   display: flex;
   flex-direction: column;
-  background-image: var(--bg-image);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  min-height: clamp(41.75rem, 20.4082rem + 90.8163vw, 64rem);
 }
 
 .decorativ__bulb {
@@ -253,6 +255,10 @@
 }
 
 @media (min-width: 768px) {
+  .header{
+    min-height: clamp(64rem, 112.251rem + -100.3922vw, 48rem);
+  }
+
   .header__title {
     margin-inline-start: 0;
     font-size: clamp(7.5rem, 0.5262rem + 14.5098vw, 9.8125rem);
@@ -335,7 +341,11 @@
 
 @media (min-width: 1024px) {
   .page {
-    width: 1024px;
+    max-width: 1024px;
+  }
+
+  .header {
+    min-height: 768px;
   }
 
   .header__theme-menu {
